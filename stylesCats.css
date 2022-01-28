@@ -1,0 +1,228 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-size: 32px;
+}
+    header {
+        background-color: transparent;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+        nav li {
+            font-weight: bold;
+            display: inline;
+            font-size: 20px;
+        }
+            nav a:link,nav a:visited {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 20px 37px;	
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+
+
+    /**
+     * Section all common attributes
+     */
+    .section-general {
+        background: #000;
+        padding: 50px 10px;
+        /* min-height: 100vh; */
+    }
+    .section-general.alternate {
+        background: rgb(27,27,27);
+    }
+    h3 {
+        color: rgba(225,225,255,.7); 
+        text-align: center;
+    }
+    p {
+        color: #fff;
+        margin: 0 60px 100px;
+    }
+
+
+    
+    /**
+     * Section all common attributes
+     */
+     .columns-four {
+        
+        padding: 15px 15px;
+    }
+        .columns-four div {
+            width: 24%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+
+
+    /**
+    * Vom lucra la FIRST 
+    */
+    .first {
+        min-height: 100vh;
+        background-image: url(Images/cats-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+        .tabs {
+            list-style-type: none; 
+            margin: 0px; 
+            padding: 0px; 
+        }
+            .tabs li {
+                font-size: 92px; 
+                font-weight: 200;
+            }
+            li.tab1 {
+                font-size: 100px; 
+                font-weight: 600;
+            }
+            .tabs li:hover span {
+                background: rgba(245, 245, 220, .6);
+                color: black;
+            }
+            li.tab3 {
+                font-weight: 300;
+            }
+            li.tab4 {
+                font-weight: 400;
+            }
+            li.tab5 {
+                font-weight: 500;
+            }
+            li.tab6 {
+                font-weight: 600;
+            }
+        .minting {
+            text-align: right;
+            padding: 0 25px;
+        }
+            .minting a {
+                color: white;
+                text-decoration: none;
+                font-size: 33px;
+                text-align: center;
+                border: solid 1px #fff; 
+                padding: 10px 55px;
+            }
+            .minting a:hover {
+                color: black;
+                background: rgba(220,220,220,.4)
+            }
+    /**
+    * END Vom lucra la FIRST 
+    */
+
+    /**
+    * Vom lucra la SECOND
+    */
+    .second {
+        text-align: center;
+    }
+        .subtitle {
+            color: rgba(225,225,255,.7);
+            text-align: center;
+        }
+
+    /**
+    *END Vom lucra la SECOND 
+    */
+
+    /**
+    * Vom lucra la THIRD 
+    */
+    .third {}
+        .table-raodmap {
+            margin-left: 55px;
+            margin-right: auto;
+            margin-top: 70px;
+            border-left: 2px solid white;
+            padding: 20px 20px;
+            height: 130px;
+        }
+            .table-raodmap td {
+                font-size: 30px;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+            .table-raodmap th {
+                padding-top: 20px;
+            }
+            .tbl-img {
+                width: 200px;
+                height: 200px;
+            }
+    /**
+    * END Vom lucra la THIRD 
+    */
+
+    /**
+    * Vom lucra la FOURTH
+    */
+    .fourth {}
+        .fourth dl {
+
+            margin-left: 60px;
+            margin-right: 40px;
+        }
+      .qstns {
+        background:  rgb(27,27,27);
+      }
+    /**
+    *END Vom lucra la FOURTH
+    */
+
+    /**
+    * Vom lucra la FIFTH
+    */
+    .fifth {
+    }
+        .columns-team {
+            margin-top: 220px;
+            text-align: center;
+        }
+            .columns-team div {
+                padding-top: 1px;
+                padding-bottom: 1px;
+                padding: 0 15px;
+            }
+                .columns-team h5,
+                .columns-team h6 {
+                    margin: 15px 0 0;
+                    font-size: 32px;
+                }
+                .columns-team h6 {
+                    font-size: 25px;
+                }
+    /**
+    *END Vom lucra la FIFTH
+    */
+
+    footer {
+        padding: 10px 10px 30px 10px;
+        background: #000;
+        text-align: center;
+    }
