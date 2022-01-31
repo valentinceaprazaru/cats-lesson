@@ -11,10 +11,11 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
+ /* PHONE FORMAT */
 
 body {
     font-family: 'Dosis', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -46,7 +47,7 @@ header {
     .section-general {
         background: #000;
         padding: 20px 10px;
-        /* min-height: 100vh; */
+        min-height: 100vh;
     }
     .section-general.alternate {
         background: rgb(27,27,27);
@@ -57,10 +58,10 @@ header {
     }
     p {
         color: #fff;
-        margin: 0 60px 100px;
+        margin: 0 50px 45px;
     }
     .columns-four {
-        
+        font-size: 15px;
         padding: 15px 15px;
     }
         .columns-four div {
@@ -69,7 +70,7 @@ header {
             vertical-align: middle;
         }
     /**
-     * Section all common attributes
+     *END Section all common attributes
      */
 
 
@@ -152,34 +153,84 @@ header {
     * Vom lucra la THIRD 
     */
     .third {}
-        .table-raodmap {
-            margin-left: 25px;
+        .tableroadmap {
+            margin-left: 15px;
             margin-right: auto;
-            margin-top: 40px;
             border-left: 2px solid white;
-            padding: 10px 10px;
             height: 90px;
         }
-            .table-raodmap td {
-                font-size: 30px;
-                padding-left: 15px;
-                padding-top: 20px;
+            .tableroadmap td {
+                font-size: 16px;
+                padding-left: 10px;
+                padding-top: 15px;
             }
-            .table-raodmap th {
-                padding-top: 20px;
-            }
-            .tbl-img {
-                width: 200px;
-                height: 200px;
+            .tableroadmap th {
+                padding-top: 15px;
             }
     /**
     * END Vom lucra la THIRD 
     */
 
+     /**
+    * Vom lucra la FOURTH
+    */
+    .fourth {}
+        .fourth dl {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+      .qstns {
+        background:  rgb(27,27,27);
+      }
+    /**
+    *END Vom lucra la FOURTH
+    */
+
+ /**
+    * Vom lucra la FIFTH
+    */
+    .fifth {
+        min-height: 80vh;
+    }
+        .columns-team {
+            margin-top: 100px;
+            text-align: center;
+        }
+            .columns-team div {
+                padding-top: 1px;
+                padding-bottom: 1px;
+                vertical-align: text-top;
+            }
+                .columns-team h5,
+                .columns-team h6 {
+                    margin: 5px 0 0;
+                    font-size: 18px;
+                }
+                .columns-team h6 {
+                    font-size: 11px;
+                }
+                .tbl-img {
+                    width: 50px;
+                    height: 50px;
+                }
+    /**
+    *END Vom lucra la FIFTH
+    */
+
+    footer {
+        padding: 10px 10px 20px 10px;
+        background: #000;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+    }
+
+    /**
+     *END PHONE FORMAT* 
+    */
 
 
-
-
+    /* TABLET FORMAT */
 
 @media screen and (min-width: 640px) {
     body {
@@ -187,20 +238,13 @@ header {
     }
     .section-general {
         padding: 30px 10px;
+        min-height: 100vh;
     }
-
-
-
-} /* @media screen and (min-width: 640px) */
-
-
-
-@media screen and (min-width: 1280px) {
-    body {
-        font-size: 32px;
+    p {
+        margin: 0 50px 90px;
     }
-    .section-general {
-        padding: 50px 10px;
+    .columns-four {
+        font-size: 24px;
     }
 
     /* first section */
@@ -221,7 +265,128 @@ header {
     /* END first section */
 
     /* second section */
-    .table-raodmap {
+    .second {
+        text-align: center;
+    }
+        .subtitle {
+            color: rgba(225,225,255,.7);
+            text-align: center;
+        }
+    /* END second secction */
+
+    /* third section */
+    .tableroadmap {
+        margin-left: 55px;
+        margin-right: auto;
+        margin-top: 30px;
+        border-left: 2px solid white;
+        padding: 20px 20px;
+    }
+        .tableroadmap td {
+            font-size: 24px;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+        .tableroadmap th {
+            padding-top: 20px;
+        }
+    /* END third section */
+
+    /* fourth section */
+    .fourth {}
+        .fourth dl {
+            margin-left: 60px;
+            margin-right: 40px;
+        }
+    /* END fourth section*/
+
+    /* fifth section */
+    .fifth {
+    }
+        .columns-team {
+            margin-top: 220px;
+            text-align: center;
+        }
+            .columns-team div {
+                padding-top: 1px;
+                padding-bottom: 1px;
+                padding: 0 15px;
+                vertical-align: text-top;
+            }
+                .columns-team h5,
+                .columns-team h6 {
+                    margin: 15px 0 0;
+                    font-size: 32px;
+                }
+                .columns-team h6 {
+                    font-size: 25px;
+                }
+                .tbl-img {
+                    width: 100px;
+                    height: 100px;
+                }
+    /* END fifth section*/
+
+    footer {
+        padding: 10px 10px 30px 10px;
+        background: #000;
+        text-align: center;
+        font-size: 20px;
+        height: 40px;
+    }
+
+} /* @media screen and (min-width: 640px) */
+
+    /**
+     *END TABLET FORMAT* 
+    */
+
+    /* DESKTOP FORMAT*/
+
+@media screen and (min-width: 1280px) {
+    body {
+        font-size: 32px;
+    }
+    .section-general {
+        padding: 50px 10px;
+        min-height: 100vh;
+    }
+    p {
+        margin: 0 60px 100px;
+    }
+    .columns-four {
+        font-size: 30px;
+    }
+
+    /* first section */
+    .tabs li {
+        font-size: 92px; 
+    }
+    li.tab1 {
+        font-size: 100px; 
+    }
+    .minting {
+        text-align: right;
+        padding: 0 25px;
+    }
+        .minting a {
+            font-size: 33px;
+            padding: 10px 55px;
+        }
+    /* END first section */
+
+    /* second section */
+    .second {
+        text-align: center;
+    }
+        .subtitle {
+            color: rgba(225,225,255,.7);
+            text-align: center;
+        }
+    /* END second secction */
+
+    /* third section */
+    .tableroadmap {
         margin-left: 55px;
         margin-right: auto;
         margin-top: 70px;
@@ -229,18 +394,61 @@ header {
         padding: 20px 20px;
         height: 130px;
     }
-        .table-raodmap td {
+        .tableroadmap td {
             font-size: 30px;
             padding-left: 15px;
             padding-top: 20px;
         }
-        .table-raodmap th {
+        .tableroadmap th {
             padding-top: 20px;
         }
-        .tbl-img {
-            width: 200px;
-            height: 200px;
+    /* END third section */
+
+    /* fourth section */
+    .fourth {}
+        .fourth dl {
+            margin-left: 60px;
+            margin-right: 40px;
         }
-    /* END second section */
+    /* END fourth section*/
+
+    /* fifth section */
+    .fifth {
+    }
+        .columns-team {
+            margin-top: 220px;
+            text-align: center;
+        }
+            .columns-team div {
+                padding-top: 1px;
+                padding-bottom: 1px;
+                padding: 0 15px;
+                vertical-align: text-top;
+            }
+                .columns-team h5,
+                .columns-team h6 {
+                    margin: 15px 0 0;
+                    font-size: 32px;
+                }
+                .columns-team h6 {
+                    font-size: 25px;
+                }
+                .tbl-img {
+                    width: 200px;
+                    height: 200px;
+                }
+    /* END fifth section*/
+
+    footer {
+        padding: 10px 10px 30px 10px;
+        background: #000;
+        text-align: center;
+        font-size: 20px;
+        height: 40px;
+    }
 
 } /* @media screen and (min-width: 1280px) */
+
+    /**
+     *END DESKTOP FORMAT* 
+    */
